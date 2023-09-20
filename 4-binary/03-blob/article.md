@@ -1,14 +1,14 @@
 # Blob
 
-`ArrayBuffer` and views are a part of ECMA standard, a part of JavaScript.
+یک `ArrayBuffer` و viewها بخشی از استاندارد ECMA، بخشی از جاوااسکریپت هستند.
 
-In the browser, there are additional higher-level objects, described in [File API](https://www.w3.org/TR/FileAPI/), in particular `Blob`.
+در مرورگر، شی‌های سطح بالاتر دیگری وجود دارند که در [File API](https://www.w3.org/TR/FileAPI/)، به خصوص `Blob` شرح داده شده‌اند.
 
-`Blob` consists of an optional string `type` (a MIME-type usually), plus `blobParts` -- a sequence of other `Blob` objects, strings and `BufferSource`.
+یک `Blob` از یک رشته‌ی اختیاری `type`(معمولا از جنس MIME-type)، به علاوه‌ی `blobParts` تشکیل شده است -- یک دنباله از اشیا `Blob` دیگر، رشته‌ها و `BufferSource`.
 
 ![](blob.svg)
 
-The constructor syntax is:
+سینتکس سازنده به صورت زیر است:
 
 ```js
 new Blob(blobParts, options);
